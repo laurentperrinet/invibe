@@ -1,6 +1,9 @@
 .doit.db
 *.py[cod]
 
+output
+cache
+
 # C extensions
 *.so
 

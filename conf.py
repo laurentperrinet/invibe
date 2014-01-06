@@ -6,16 +6,16 @@ import time
 # Configuration, please edit
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"
-BLOG_TITLE = "Demo Site"
+BLOG_AUTHOR = "Laurent Perrinet"
+BLOG_TITLE = "SciBlog"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://getnikola.com/"
+SITE_URL = "http://blog.invibe.net/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."
+BLOG_EMAIL = "laurent.perrinet@univ-amu.fr"
+BLOG_DESCRIPTION = "This is the blog site for the INVIBE team.."
 
 # Nikola is multilingual!
 #
@@ -139,7 +139,7 @@ COMPILERS = {
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    # "pandoc": ('.rst', '.md', '.txt'),
+    "pandoc": ('.moin'),
 }
 
 # Create by default posts in one file format?
@@ -211,7 +211,7 @@ COMPILERS = {
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = ["deploy.sh"]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -292,6 +292,7 @@ COMPILERS = {
 
 # Name of the theme to use.
 THEME = "bootstrap3"
+#THEME = "zen-ipython"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
